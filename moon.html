@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moon</title>
+
+    <link rel="stylesheet" href="./css/moon.css">
+</head>
+
+
+<input type="datetime-local" id="datetime-moon">
+<strong>use UTC!</strong>
+<button id="setButton">Set time</button><button id="toggleButton">Pause</button><br>
+libration lon: <input id="lon" class="libration"></input>
+lat: <input id="lat" class="libration"></input>
+<button type="button" id="view">view</button>
+position angle of axis: <input id="pa" class="libration"></input><br>
+sub-sun lon: <input id="sun-lon" class="libration"></input>
+lat: <input id="sun-lat" class="libration"></input>
+
+distance in km: <span id="distance"></span>
+<!-- Create the checkbox -->
+
+<!-- 创建一个按钮 -->
+
+<br>
+<input type="checkbox" id="sub-sun"> sub-sun point
+<input type="checkbox" id="sub-earth"> sub-earth point<br>
+<input type="checkbox" id="pa-exclude"> Exclude position angle
+<input type="checkbox" id="shadow"> Exclude shadow
+
+<div class="end">Horizon: <span id="horizon" class="horizon">equator</span>
+    <br> sub-earth lon/sub-sun lat's error is less than 20 arc min; sub-earth lat/sub-sun's lon/position angle of axis
+    eror in less than half
+    arc min between 1900-2050 (compared to de421).
+
+</div>
+<script type="module" src="/javascript/moon.js"></script>
+</body>
+
+</html>

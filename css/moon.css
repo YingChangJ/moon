@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  color: rgb(177, 176, 176);
+  font-size: medium;
+}
+
+.libration {
+  max-width: 7ch;
+}
+/* Style for the renderer's canvas */
+canvas {
+  position: fixed !important; /* Override if necessary */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind everything else */
+}
+
+/* Example style for content to ensure it appears above the canvas */
+.content {
+  position: relative; /* Or 'absolute' depending on your layout */
+  z-index: 2; /* Higher than the canvas */
+  /* More styling as needed */
+}
+.horizon {
+  color: aqua;
+}
+@media (any-pointer: coarse) {
+  body {
+    font-size: x-large;
+    color: #f3efbb;
+  }
+  /* Adjust font size for text within buttons */
+  button {
+    font-size: x-large;
+  }
+
+  /* Adjust font size for text within input fields */
+  input {
+    font-size: x-large;
+  }
+}
+
+.end {
+  position: fixed !important; /* Override if necessary */
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Behind everything else */
+}
